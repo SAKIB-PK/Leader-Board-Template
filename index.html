@@ -5,17 +5,176 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeaderBoard Template Design</title>
-    <!-- ------------- -->
+    <script src="https://kit.fontawesome.com/56612ccdef.js" crossorigin="anonymous"></script>
+   <!-- ------------- -->
     <!-- StyleSheet main file -->
     <!-- ---------------------- -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <section id="header__part">
+            <div class="header__left">
+                <img src="images/icons/logo.png" alt="Idea Logo" class="header__logo">
+                <span class="header__brandName">Idea</span>
+            </div>
+            <div class="header__right">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="#" class="header__link">Home</a></li>
+                        <li class="header__item"><a href="#" class="header__link">About</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Works</a></li>
+                        <li class="header__item"><a href="#" class="header__link"><img src="images/icons/profile.png" alt="Profile Image" class="header__profileImg"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
 
     </header>
     <main>
+        <section id="players " class="container">
+            <div>
+                <h2 class="container__title">Top Player</h2>
+                <div class="players__container ">
+                    <div class="players__item">
+                        <img src="images/players/player-1.png" alt="" class="players__img">
+                        <h2 class="player__title">Sajedul Islam</h2>
+                    </div>
+                    <div class="players__item">
+                        <img src="images/players/player-2.png" alt="" class="players__img">
+                        <h2 class="player__title">Parves hasan</h2>
+                    </div>
+                    <div class="players__item">
+                        <img src="images/players/player-3.png" alt="" class="players__img">
+                        <h2 class="player__title">Mohammad Ali</h2>
+                    </div>
+                    <div class="players__item">
+                        <img src="images/players/player-4.png" alt="" class="players__img">
+                        <h2 class="player__title">Abdus Sattar</h2>
+                    </div>
+                    <div class="players__item">
+                        <img src="images/players/player-5.png" alt="" class="players__img">
+                        <h2 class="player__title">Rahim Islam</h2>
+                    </div>
+                    <div class="players__item">
+                        <img src="images/players/player-6.png" alt="" class="players__img">
+                        <h2 class="player__title">Sabbir Hasan</h2>
+                    </div>
+                </div>
+            <hr>
+            </div>
+            <div>
+                <h2 class="container__title">Top Blog</h2>
+                <div class="card">
+                    <div class="card__item">
+                        <img src="images/blogs/blog-1.png" alt="">
+                        <div class="card__desc">
+                            <h2>13 of My Favorite
+                                UI/UX Goodies</h2>
+                            <h3>By  <a href="" class="orange_text"> Danny Sapio</a></h3>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <img src="images/blogs/blog-2.png" alt="">
+                        <div class="card__desc">
+                            <h2>UI cheat sheet: 
+                                list vs grids</h2>
+                            <h3>By 
+                                <a href="" class="orange_text"> Tess Gadd</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <img src="images/blogs/blog-3.png" alt="">
+                        <div class="card__desc">
+                            <h2>7 typography tips 
+                                for interface design</h2>
+                            <h3>By <a href="" class="orange_text"> Jeremiah Lam</a>
 
+                            </h3>
+                        </div>
+                        
+                    </div>
+                    <div class="card__item">
+                        <img src="images/blogs/blog-4.png" alt=""> 
+                        <div class="card__desc">
+                            <h2>13 of My Favorite UI/UX Goodies</h2>
+                            <h3>By <a href="" class="orange_text"> Ferdinand Vogler</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================================ -->
+        <!-- ====================Course Section Start======== -->
+        <section class="container course">
+            <h1 class="container__title">Latest Course</h1>
+            <div class="course__container">
+                <div class="course__item">
+                    <img src="images/courses/course-1.png" alt="">
+                    <div class="course__desc">
+                        <h2>The Complete Javascript Courses 2020</h2>
+                    <h3 class="red--text">Mohammad Ali</h3>
+                    <div class="course__ranking">
+                        <div class="course__star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star un-vote"></i>
+                            <i class="fas fa-star un-vote"></i>
+                        </div>
+                        <span class="course__vote">3.5</span>
+                        <div class="course__timer">
+                            <i class="far fa-clock"></i>
+                            <span>01:20 hr</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="course__item">
+                    <img src="images/courses/course-2.png" alt="">
+                    <div class="course__desc">
+                            <h2>The Complete Javascript Courses 2020</h2>
+                        <h3 class="red--text">Mohammad Ali</h3>
+                        <div class="course__ranking">
+                            <div class="course__star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star un-vote"></i>
+                            </div>
+                            <span class="course__vote">4.5</span>
+                            <div class="course__timer">
+                                <i class="far fa-clock"></i>
+                                <span>01:20 hr</span>
+                            </div>
+                    </div>
+                </div>
+                </div>
+                <div class="course__item">
+                    <img src="images/courses/course-3.png" alt="">
+                    <div class="course__desc">
+                        <h2>The Complete Javascript Courses 2020</h2>
+                    <h3 class="red--text">Mohammad Ali</h3>
+                    <div class="course__ranking">
+                        <div class="course__star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star un-vote"></i>
+                        </div>
+                        <span class="course__vote">4.5</span>
+                        <div class="course__timer">
+                            <i class="far fa-clock"></i>
+                            <span>01:20 hr</span>
+                        </div>
+                    </div>
+                    </div>
+                
+                </div>
+        </section>
     </main>
     <footer>
 

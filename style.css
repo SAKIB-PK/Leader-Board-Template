@@ -1,0 +1,215 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+
+/* ================ */
+/* Variable Declare */
+/* ==================== */
+:root{
+    --section-color: slateblue;
+    --heading-color:#333;
+    --header-color:white;
+    --main-color:#562EFF;
+    --timer-background:lightgray;
+    --timer-color:red;
+}
+*{
+    /* margin:0;
+    padding:0; */
+    box-sizing: border-box;
+    
+    
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ================ */
+/* Utility Design */
+/* ==================== */
+img{
+    max-width: 100%;
+    height: auto;
+}
+hr{
+    color: #d1d1d1;
+}
+.container {
+    width: 80%;
+    background-color: white;
+    margin-top: 36px;
+    padding: 33px;
+    border-radius: 10px;
+}
+main {
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.container__title {
+    color: var(--main-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+.orange_text{
+    color: var(--main-color);
+}
+a{
+    text-decoration: none;
+}
+/* ================ */
+/* Header Section Design */
+/* ==================== */
+header{
+    background-color: var(--main-color);
+}
+#header__part {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    height: 100px;
+}
+.header__left{
+    display: flex;
+    align-items: center;
+
+}
+.header__logo {
+    width: 41px;
+    height: 51px;
+    margin-right: 15px;
+}
+.header__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:20px;
+}
+.header__item{
+    list-style-type: none;
+    padding:12px 20px;
+}
+.header__link{
+    text-decoration: none;
+    color:var(--header-color);
+}
+
+/* ================ */
+/* Top Player Section Design */
+/* ==================== */
+.players__container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr );
+}
+.players__item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 35px;
+}
+.players__img {
+    width: 56px;
+    height: 56px;
+    margin-right: 16px;
+}
+img.players__img:hover {
+    border: 2px solid red;
+    border-radius: 50%;
+}
+.player__title {
+    font-size: 14px;
+    font-weight: 500;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.card__item {
+    display: flex;
+    margin-bottom: 30px;
+}
+.card__item img {
+    width: 177px;
+    height: 116px;
+    margin-right: 16px;
+}
+
+.card__desc h2{
+    font-size:20px;
+}
+.card__desc h3{
+    font-size:16px;
+    font-weight: 400;
+    color: #9F9F9F;
+}
+/* ================ */
+/* course Section Design */
+/* ==================== */
+.course__container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.course__item {
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+    /* padding: 10px; */
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin: 10px;
+}
+.course__item img{
+    width:100%;
+
+}
+.course__desc {
+    padding-inline: 10px;
+}
+.course__desc h2{
+    font-size: 22px;
+}
+h3.red--text {
+    color: #ED6B4F;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.course__ranking {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.course__timer {
+    color: #ED6B4F;
+    border-radius: 10px;
+    padding-inline: 10px;
+    background-color: #FEE5DF;
+}
+span.course__vote {
+    color: #A2A2A2;
+}
+
+.un-vote {
+    color: #AEAEAE;
+}
+.fa, .fas:not(.un-vote) {
+    font-weight: 900;
+    color: #FFC014;
+}
+
+@media(max-width:990px){
+    .card{
+        grid-template-columns: 1fr;
+    }
+    .course__container{
+        grid-template-columns: 1fr;
+    }
+}
+
